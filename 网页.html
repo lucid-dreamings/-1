@@ -1,0 +1,330 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>博物馆实践</title>
+</head>
+<style>
+*
+{
+    box-sizing: border-box;
+}
+.head p
+{
+    box-sizing: border-box;
+    margin-bottom:0px;
+    margin-top:0px;
+    font-style: italic;
+}
+#text
+{
+    list-style: none;
+}
+ul.b {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(241, 62, 62);
+}
+ 
+.b li {
+    font-style: italic;
+    width:25%;
+    float: left;
+    border-right:1px solid #ddd;
+}
+
+.b li:last-child {
+    border-right: none;
+}
+.b li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ 
+/*鼠标移动到选项上修改背景颜色 */
+.b li a:hover {
+    background-color: rgb(196, 75, 226);
+}
+.box
+{
+    position:relative;
+    height:300px;
+}
+.box #box1
+{
+    position:absolute;
+    left:37.5%;
+}
+.box #box2
+{
+    position:absolute;
+    left:37.5%;
+}
+.box #box3
+{
+    position:absolute;
+    left:37.5%;
+}
+.content{
+    width:auto;
+    height:auto;
+    background-color: #ddd;
+}
+.firstsection p
+{
+    margin-top:0px;
+    margin-bottom:0px;
+    width:300px;
+}
+.firstsection
+{
+    margin-left:50px;
+    display:inline-block; 
+    width:300px;
+    height:300px;
+    background-color: crimson;
+}
+.secondsection
+{
+    margin-left:20px;
+    float:right;
+    background-color: rgb(255, 255, 255);
+    width:calc(100% - 370px);
+    height:300px;
+}
+ul.a
+{
+    list-style: circle;
+}
+.a li a:hover
+{
+    background-color: rgb(223, 12, 160);
+}
+.secondfloat
+{
+    float:right;
+    width:calc(100% - 300px);
+    height:245px;
+}
+.thirdsection .tryone
+{
+    float:left;
+    width:33.3%;
+    height:300px;
+    border-right:1px solid ;
+}
+.thirdsection .trytwo
+{
+    float:left;
+    width:33.3%;
+    height:300px;
+    border-right:1px solid ;
+}
+.thirdsection .trythree
+{
+    float:left;
+    width:33.3%;
+    height:300px;
+    border-right:1px solid ;
+}
+.thirdsection:after{
+        content: "";
+        display: block;
+        height: 0;
+        clear:both;
+        visibility: hidden;
+    }
+.thirdsection
+{
+    margin-left:50px;
+    background-color: white;
+}
+.thirdsection p
+{
+    box-sizing: border-box;
+    margin-bottom:0px;
+    margin-top:0px;
+    font-style: italic;
+}
+.chongfu1
+{
+    display:inline-block;
+}
+.chongfu2
+{
+    position: relative;
+    display:inline-block;
+    margin-top:0px;
+}
+input[type=text]
+{
+    padding:12px;
+    border:1px solid rgb(30, 131, 214);
+    border-radius: 4px;
+    resize: vertical;
+}
+label
+{
+    padding:12px 12px 12px 0;
+    display: inline-block;
+}
+.container
+{
+    border-radius: 5px;
+    padding:20px;
+}
+.col-25
+{
+    float:left;
+    margin-left:70%;
+    margin-top: 6px;
+}
+#col-75
+{
+    float: left;
+    margin-top: 6px;
+}
+.row:after
+{
+    content:"";
+    display: block;
+    clear:both;
+    height:0px;
+    visibility: hidden;
+    overflow:hidden;
+}
+input[type=sumbit]
+{
+    border: none;
+    color: rgb(252, 6, 6);
+    padding: 16px 32px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+    color:rgb(52, 167, 161);
+    cursor: pointer;
+    width:7%;
+    text-align: center;
+}
+input[type=sumbit]:hover
+{
+    background-color: rgb(35, 165, 31);
+}
+#search
+{
+    width:100px;
+    transition: all 0.5s linear;
+}
+</style>
+<body>
+<div>
+    <div class="head">
+        <p >柯西博物馆 </p>
+        <p >kexi museum </p>
+    </div>
+    <div class="content">
+        <ul class="b">
+            <li><a href="https://www.baidu.com/">百度</a></li>
+            <li><a href="https://www.bilibili.com/">bilibili</a></li>
+            <li><a href="https://www.runoob.com/js/js-tutorial.html">JavaScript</a></li>
+            <li><a href="https://www.runoob.com/css/css-tutorial.html">CSS</a></li>
+        </ul>
+        <div class="box">
+            <div id="box1">
+                <img src="file:///D:///Pictures///Saved Pictures///2ew97m.png" width="500px" height="300px">
+            </div>
+            <div id="box2">
+                <img src="file:///D:///Pictures///Saved Pictures///illust_93747896_20211029_230706.jpg" width="500px" height="300px">
+            </div>
+            <div id="box3">
+                <img src="file:///D:///Pictures///Saved Pictures///QQ图片20210701204905.jpg" width="500px" height="300px">
+            </div>
+        </div>
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="search">搜索</label>
+                    </div>
+                    <div id="col-75">
+                        <input type="text" id="search" name="搜索" placeholder="Your name..">
+                        <ul id="test"></ul>
+                    </div>
+                    <input type="sumbit" value="提交">
+                </div>
+            </form>
+        </div>
+        <div id="introduce">
+            <div class="firstsection"> 
+                <p>开放事件</p>
+                <p>……</p>
+                <p>……</p>
+                <p>交通路线</p>
+                <p>……</p>
+                <p>……</p>
+            </div>
+            <div class="secondsection"> 
+                <div>
+                    <p style="margin-left:30px;">柯博快讯</p>
+                </div>
+                <div style="display:inline-block">
+                    <img src="file:///D:///Pictures///Saved Pictures///k9vpx1.jpg" width="300px" height="245px">
+                </div>
+                <div class="secondfloat">
+                    <ul class="a">
+                        <li><a href="https://baike.baidu.com/item/%E5%8A%A8%E7%94%BB/206564">Animation</a></li>
+                        <li><a href="https://baike.baidu.com/item/%E6%BC%AB%E7%94%BB/178351">Comics</a></li>
+                        <li><a href="https://baike.baidu.com/item/%E6%B8%B8%E6%88%8F/33581">Games</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="thirdsection">
+                <div class="tryone">
+                    <p>番剧</p>
+                    <div class="chongfu1">
+                        <a href="https://t.bilibili.com/?tab=512,4097,4098,4099,4100,4101">
+                            <img src="https://tse1-mm.cn.bing.net/th/id/OIP-C.h4SjKqgnLeos7y19ytS18gHaEo?w=284&h=180&c=7&r=0&o=5&dpr=1.75&pid=1.7" width="300px" height="150px">
+                        </a>
+                    </div>
+                    <div class="chongfu2">
+                        <p class="xp">try to do it</p>
+                    </div>
+                </div>
+                <div class="trytwo">
+                    <p>漫画</p>
+                    <div class="chongfu1">
+                        <a href="https://t.bilibili.com/?tab=512,4097,4098,4099,4100,4101">
+                            <img src="https://tse3-mm.cn.bing.net/th/id/OIP-C.BmUkMDfXL7bmd-s3LcOIIgHaFO?w=254&h=180&c=7&r=0&o=5&dpr=1.75&pid=1.7" width="300px" height="150px">
+                        </a>
+                    </div>
+                        <div class="chongfu2">
+                            <p>future garage</p>
+                        </div>
+                    </div>
+                <div class="trythree">
+                    <p>游戏</p>
+                    <div class="chongfu1">
+                        <a href="https://t.bilibili.com/?tab=512,4097,4098,4099,4100,4101">
+                            <img src="https://tse1-mm.cn.bing.net/th/id/OIP-C.lS1CTkrWgIa04Ha95hxJ3QHaEK?w=311&h=180&c=7&r=0&o=5&dpr=1.75&pid=1.7" width="300px" height="150px">
+                        </a>
+                    </div>
+                    <div class="chongfu2">
+                        <ul>
+                            <li>do</li>
+                            <li>do</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="move.js"></script>
+<script src="img.js"></script>
+<script src="搜索框.js"></script>
+<head>
